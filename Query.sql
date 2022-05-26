@@ -31,4 +31,4 @@ UPDATE veiculo SET veiculo.situacao = "I" WHERE veiculo.anoFabricacao < 2001
 
 h) Exclua os registros da tabela produtoVeiculo cujo o veículo ou produto estejam inativos
 
-
+DELETE produtoVeiculo FROM produtoVeiculo JOIN produto ON produtoVeiculo.idProduto = produto.id JOIN veiculo ON produtoVeiculo.idVeiculo = veiculo.id WHERE  produto.situacao = "I" OR veiculo.situacao = "I";
