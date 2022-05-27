@@ -70,9 +70,15 @@ function listregister(e)
     if(formObj)
     {
         $.post("Rotas.php",{formObj},
-        function(data){
-        $("#json_response").html(data);
+        function(data)
+        {
+            //$("#json_response").html(data);
+            alert("Beneficiario cadastrado com sucesso");
         });
+    }
+    else
+    {
+        alert("Não foi possivel o cadastrado do beneficiario");
     }
 
 }
