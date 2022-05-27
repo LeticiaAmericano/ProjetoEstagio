@@ -87,6 +87,33 @@ class Beneficiario
     {
         return  $this->telefone;
     }
+
+    static function insertBeneficiario($beneficiario)
+    {
+        if(DAO::connectDatabase())
+        {
+            $sql = "INSERT INTO beneficiario (nome, documento, dataNascimento, sexo, situacao, logradouro, numero, bairro, cidade, estado, email, telefone) 
+                VALUES (\"".$beneficiario->getNome(). 
+                "\",\"".$beneficiario->getDocumento(). 
+                "\",\"".$beneficiario->getDataNascimento(). 
+                "\",\"".$beneficiario->getSexo(). 
+                "\",\"".$beneficiario->getSituacao(). 
+                "\",\"".$beneficiario->getLogradouro(). 
+                "\",\"".$beneficiario->getNumero(). 
+                "\",\"".$beneficiario->getBairro(). 
+                "\",\"".$beneficiario->getCidade(). 
+                "\",\"".$beneficiario->getEstado(). 
+                "\",\"".$beneficiario->getEmail(). 
+                "\",\"".$beneficiario->getTelefone(). "\")";
+            
+            $result = DAO::$mysqli->query($sql);
+            if($result->num_rows > 0)
+            {
+                return True;
+            }
+        }
+        return False;
+    }
 }
 
 ?>
