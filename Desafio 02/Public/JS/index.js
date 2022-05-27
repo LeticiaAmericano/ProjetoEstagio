@@ -69,7 +69,7 @@ function listregister(e)
 
     if(formObj)
     {
-        $.post("Rotas.php",{formObj},
+        $.post("Application/Rotas.php",{formObj},
         function(data)
         {
             //$("#json_response").html(data);
