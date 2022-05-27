@@ -67,6 +67,13 @@ function listregister(e)
             $("#table").addClass("d-block");
     }
 
+    if(formObj)
+    {
+        $.post("Rotas.php",{formObj},
+        function(data){
+        $("#json_response").html(data);
+        });
+    }
 
 }
 // quando o formulario for enviado vai chamar a função
