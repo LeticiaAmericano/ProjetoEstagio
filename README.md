@@ -21,13 +21,13 @@
       <h4>- SQL -</h4>
       <p> Query.sql: Instruções sql.</p>
       <h4>- Desafio 01 -</h4>
-      <p>Application: </p>
+      <p>Application: Responsavel por fazer as rotas do backend com o frontend.</p>
       <p>Controllers: Intermediario entre as requisições enviadas e as respostas fornecidas.</p>
       <p>Models: Gerencia e controla a forma que os dados se comportam.</p>
       <p>Public: Pasta que tem a estilização e comandos js.</p>
       <p>index.php: Pagina da calculadora.</p>
       <h4>- Desafio 02 -</h4>
-      <p>Application: </p>
+      <p>Application: Responsavel por fazer as rotas do backend com o frontend.</p>
       <p>Controllers: Intermediario entre as requisições enviadas e as respostas fornecidas.</p>
       <p>Models: Gerencia e controla a forma que os dados de beneficiario se comportam.</p>
       <p>Public: Pasta que tem a estilização e comandos js.</p>
