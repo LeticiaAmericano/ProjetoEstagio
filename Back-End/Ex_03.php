@@ -4,7 +4,7 @@
 
 $numero = 3;
 
-for($i = 0; $i<11; $i++)
+for($i = 0; $i<=10; $i++)
 {
     $resultado = $i*$numero;
     echo "$i x $numero = $resultado \n";

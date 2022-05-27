@@ -1,0 +1,89 @@
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+.title
+{
+    color: white;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.beneficiary
+{
+    margin-left: 5%;
+    padding-top: 2%;
+    color: white;
+}
+
+.body
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+
+input, select, button
+{
+    border-radius: 5px;
+}
+
+
+.inline_custom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.camp label
+{
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.camp input[type = text], .camp input[type = date], .camp input[type = email], .camp select
+{
+    padding: 0,2em;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px;
+    display: block;
+}
+
+.camp select option
+{
+    padding-right: 1em;
+}
+
+.line 
+{
+    background-color: white;
+}
+
+.formfont
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.formcheck
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.registerbtn
+{
+    margin-bottom: 1em;
+    border: 0;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px;
+    text-shadow: 1px 1px 1px;
+}
